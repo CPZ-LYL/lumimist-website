@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Cozy Light Bluetooth Night Light & Humidifier</title>
+  <meta name="description" content="Explore Cozy Light products - Bluetooth night light and humidifier combo. View features, specifications, and pricing.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <!-- ===== 头部导航 ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="currentColor"/>
+        </svg>
+        Cozy Light
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== 页面头部 ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Discover the perfect blend of light, mist, and music</p>
+    </div>
+  </section>
+
+  <!-- ===== 产品展示区域 ===== -->
+  <section class="products-showcase">
+    <div class="container">
+      <!-- 产品 Hero -->
+      <div class="product-hero fade-in">
+        <div class="product-hero-images">
+          <div class="product-main-image">
+            <img src="images/hero-product.png" alt="Cozy Light Pro"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>Main Product Image</span>
+            </div>
+          </div>
+          <div class="product-thumbnails">
+            <div class="thumbnail active" data-index="0">
+              <img src="images/hero-product.png" alt="Main View"
+                   onerror="this.parentElement.innerHTML='<span>1</span>';">
+            </div>
+            <div class="thumbnail" data-index="1">
+              <img src="images/product-angle-1.jpg" alt="Angle 1"
+                   onerror="this.parentElement.innerHTML='<span>2</span>';">
+            </div>
+            <div class="thumbnail" data-index="2">
+              <img src="images/product-angle-2.jpg" alt="Angle 2"
+                   onerror="this.parentElement.innerHTML='<span>3</span>';">
+            </div>
+            <div class="thumbnail" data-index="3">
+              <img src="images/product-angle-3.jpg" alt="Angle 3"
+                   onerror="this.parentElement.innerHTML='<span>4</span>';">
+            </div>
+          </div>
+        </div>
+        <div class="product-hero-info">
+          <div class="product-badge">Best Seller</div>
+          <h2>Cozy Light Pro</h2>
+          <p class="product-tagline">The Ultimate 3-in-1 Comfort Device</p>
+          <div class="product-rating">
+            <div class="stars">★★★★★</div>
+            <span class="rating-count">(2,847 reviews)</span>
+          </div>
+          <div class="product-price">
+            <span class="price-current">$49.99</span>
+            <span class="price-original">$69.99</span>
+            <span class="price-discount">-29%</span>
+          </div>
+          <p class="product-description">
+            Cozy Light Pro combines a soothing night light, refreshing humidifier, and Bluetooth speaker
+            in one elegant device. Perfect for bedrooms, offices, and nurseries.
+          </p>
+          <div class="product-colors">
+            <h4>Color:</h4>
+            <div class="color-options">
+              <button class="color-btn active" data-color="white" style="background: #FFFFFF;" title="Pure White"></button>
+              <button class="color-btn" data-color="black" style="background: #2C3E50;" title="Midnight Black"></button>
+              <button class="color-btn" data-color="beige" style="background: #F5E6D3;" title="Warm Beige"></button>
+              <button class="color-btn" data-color="wood" style="background: #E8D5C4;" title="Light Wood"></button>
+            </div>
+          </div>
+          <div class="product-quantity">
+            <h4>Quantity:</h4>
+            <div class="quantity-selector">
+              <button class="qty-btn minus">-</button>
+              <input type="number" value="1" min="1" max="10" class="qty-input">
+              <button class="qty-btn plus">+</button>
+            </div>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-primary btn-add-cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+              Add to Cart
+            </button>
+            <button class="btn btn-accent btn-buy-now">Buy Now</button>
+            <button class="btn btn-outline btn-wishlist">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="product-guarantees">
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>Free Shipping</span>
+            </div>
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>30-Day Money Back</span>
+            </div>
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>2-Year Warranty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 产品详情标签页 ===== -->
+  <section class="product-details">
+    <div class="container">
+      <div class="details-tabs">
+        <button class="tab-btn active" data-tab="features">Features</button>
+        <button class="tab-btn" data-tab="specs">Specifications</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+        <button class="tab-btn" data-tab="shipping">Shipping</button>
+      </div>
+
+      <!-- 功能标签内容 -->
+      <div class="tab-content active" id="features">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Bluetooth 5.0 Control</h3>
+            <p>Control your Cozy Light remotely via Bluetooth app. Adjust settings, set timers, and customize lighting modes from your phone.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+              </svg>
+            </div>
+            <h3>7-Color Ambient Light</h3>
+            <p>Choose from 7 beautiful colors or let it cycle through a relaxing gradient. Adjustable brightness from 10-100%.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3>Ultra-Fine Cool Mist</h3>
+            <p>Advanced ultrasonic technology produces micro-fine mist. 200ml tank provides up to 6 hours of continuous operation.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+            <h3>Portable & Rechargeable</h3>
+            <p>Built-in 2000mAh battery lasts 6-8 hours. USB-C charging for modern connectivity. Take it anywhere.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Smart Timer</h3>
+            <p>Set 1, 3, or 6-hour timers. Perfect for bedtime routines. Auto shut-off when water is low for safety.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3>Hands-Free Calls</h3>
+            <p>Built-in microphone allows hands-free phone calls. Clear voice capture for convenient communication.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 规格标签内容 -->
+      <div class="tab-content" id="specs">
+        <div class="specs-table-container">
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td colspan="2" class="specs-category">General</td>
+              </tr>
+              <tr>
+                <td>Model</td>
+                <td>Cozy Light Pro</td>
+              </tr>
+              <tr>
+                <td>Dimensions</td>
+                <td>120 x 120 x 180 mm</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>380g (without water)</td>
+              </tr>
+              <tr>
+                <td>Materials</td>
+                <td>ABS + Silicone</td>
+              </tr>
+              <tr>
+                <td>Water Tank</td>
+                <td>200ml</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="specs-category">Battery & Power</td>
+              </tr>
+              <tr>
+                <td>Battery Capacity</td>
+                <td>2000mAh</td>
+              </tr>
+              <tr>
+                <td>Battery Life</td>
+                <td>6-8 hours</td>
+              </tr>
+              <tr>
+                <td>Charging Port</td>
+                <td>USB-C</td>
+              </tr>
+              <tr>
+                <td>Charging Time</td>
+                <td>2-3 hours</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="specs-category">Bluetooth</td>
+              </tr>
+              <tr>
+                <td>Version</td>
+                <td>Bluetooth 5.0</td>
+              </tr>
+              <tr>
+                <td>Range</td>
+                <td>Up to 10m (33ft)</td>
+              </tr>
+              <tr>
+                <td>Profiles</td>
+                <td>A2DP, HFP, HSP</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="specs-category">Audio</td>
+              </tr>
+              <tr>
+                <td>Speaker</td>
+                <td>5W</td>
+              </tr>
+              <tr>
+                <td>Frequency Response</td>
+                <td>100Hz - 20kHz</td>
+              </tr>
+              <tr>
+                <td>Microphone</td>
+                <td>Built-in (hands-free)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 评价标签内容 -->
+      <div class="tab-content" id="reviews">
+        <div class="reviews-summary">
+          <div class="reviews-average">
+            <div class="average-score">4.8</div>
+            <div class="average-stars">★★★★★</div>
+            <div class="total-reviews">Based on 2,847 reviews</div>
+          </div>
+          <div class="reviews-breakdown">
+            <div class="rating-bar">
+              <span class="label">5 star</span>
+              <div class="bar"><div class="fill" style="width: 78%"></div></div>
+              <span class="percentage">78%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="label">4 star</span>
+              <div class="bar"><div class="fill" style="width: 15%"></div></div>
+              <span class="percentage">15%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="label">3 star</span>
+              <div class="bar"><div class="fill" style="width: 5%"></div></div>
+              <span class="percentage">5%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="label">2 star</span>
+              <div class="bar"><div class="fill" style="width: 1%"></div></div>
+              <span class="percentage">1%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="label">1 star</span>
+              <div class="bar"><div class="fill" style="width: 1%"></div></div>
+              <span class="percentage">1%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-list">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  <img src="images/avatars/user1.jpg" alt="Sarah M."
+                       onerror="this.style.display='none'; this.parentElement.innerHTML='S';">
+                </div>
+                <div>
+                  <h4>Sarah M.</h4>
+                  <span class="verified-badge">✓ Verified Buyer</span>
+                </div>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+            <h5>Perfect for my bedroom!</h5>
+            <p>I absolutely love this product! The mist is so fine and quiet, the light creates a beautiful ambiance, and the speaker quality is surprisingly good. It's become an essential part of my bedtime routine.</p>
+            <div class="review-images">
+              <img src="images/reviews/review1-1.jpg" alt="Product in use"
+                   onerror="this.style.display='none';">
+              <img src="images/reviews/review1-2.jpg" alt="Product in use"
+                   onerror="this.style.display='none';">
+            </div>
+            <div class="review-meta">
+              <span class="review-date">Reviewed on May 15, 2026</span>
+              <span class="review-color">Color: Pure White</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  <img src="images/avatars/user2.jpg" alt="James K."
+                       onerror="this.style.display='none'; this.parentElement.innerHTML='J';">
+                </div>
+                <div>
+                  <h4>James K.</h4>
+                  <span class="verified-badge">✓ Verified Buyer</span>
+                </div>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+            <h5>Great for the nursery</h5>
+            <p>Bought this for our baby's nursery and it's perfect. The humidifier keeps the air comfortable, the night light is gentle, and we can play lullabies through the speaker. Highly recommend for parents!</p>
+            <div class="review-images">
+              <img src="images/reviews/review2-1.jpg" alt="Product in nursery"
+                   onerror="this.style.display='none';">
+            </div>
+            <div class="review-meta">
+              <span class="review-date">Reviewed on April 28, 2026</span>
+              <span class="review-color">Color: Warm Beige</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar">
+                  <img src="images/avatars/user3.jpg" alt="Lisa T."
+                       onerror="this.style.display='none'; this.parentElement.innerHTML='L';">
+                </div>
+                <div>
+                  <h4>Lisa T.</h4>
+                  <span class="verified-badge">✓ Verified Buyer</span>
+                </div>
+              </div>
+              <div class="review-rating">★★★★☆</div>
+            </div>
+            <h5>Almost perfect</h5>
+            <p>Love the design and functionality. The only reason for 4 stars instead of 5 is that I wish the water tank was a bit larger. Otherwise, it's an amazing product that I use every day.</p>
+            <div class="review-images">
+              <img src="images/reviews/review3-1.jpg" alt="Product on desk"
+                   onerror="this.style.display='none';">
+              <img src="images/reviews/review3-2.jpg" alt="Product at night"
+                   onerror="this.style.display='none';">
+            </div>
+            <div class="review-meta">
+              <span class="review-date">Reviewed on April 10, 2026</span>
+              <span class="review-color">Color: Midnight Black</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline btn-load-more">Load More Reviews</button>
+      </div>
+
+      <!-- 配送标签内容 -->
+      <div class="tab-content" id="shipping">
+        <div class="shipping-info">
+          <div class="shipping-card">
+            <div class="shipping-icon">🚚</div>
+            <h3>Free Standard Shipping</h3>
+            <p>Delivery within 5-7 business days</p>
+            <p class="shipping-note">Available for orders over $25</p>
+          </div>
+          <div class="shipping-card">
+            <div class="shipping-icon">⚡</div>
+            <h3>Express Shipping</h3>
+            <p>Delivery within 2-3 business days</p>
+            <p class="shipping-price">$9.99</p>
+          </div>
+          <div class="shipping-card">
+            <div class="shipping-icon">🔄</div>
+            <h3>Easy Returns</h3>
+            <p>30-day money-back guarantee</p>
+            <p class="shipping-note">No questions asked</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 相关产品 ===== -->
+  <section class="related-products">
+    <div class="container">
+      <h2>You May Also Like</h2>
+      <div class="products-grid">
+        <div class="product-card fade-in">
+          <div class="product-card-image">
+            <img src="images/product-lite.jpg" alt="Cozy Light Lite"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>Cozy Light Lite</span>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Cozy Light Lite</h3>
+            <p>Night Light & Humidifier</p>
+            <div class="product-card-price">
+              <span class="price-current">$29.99</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="product-card-image">
+            <img src="images/product-mini.jpg" alt="Cozy Light Mini"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>Cozy Light Mini</span>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Cozy Light Mini</h3>
+            <p>Portable Night Light</p>
+            <div class="product-card-price">
+              <span class="price-current">$19.99</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+          </div>
+        </div>
+
+        <div class="product-card fade-in">
+          <div class="product-card-image">
+            <img src="images/essential-oil-set.jpg" alt="Aromatherapy Essential Oil Set"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>Essential Oil Set</span>
+            </div>
+          </div>
+          <div class="product-card-info">
+            <h3>Aromatherapy Essential Oil Set</h3>
+            <p>Change the scent of your Cozy Light</p>
+            <div class="product-card-price">
+              <span class="price-current">$9.99</span>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA 区域 ===== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Transform Your Space?</h2>
+      <p>Experience the perfect combination of light, mist, and music with Cozy Light.</p>
+      <a href="#" class="btn btn-accent">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>温馨光辉</h3>
+          <p>Combining ambient light, refreshing humidity, and wireless audio into one beautiful device. Designed to enhance your everyday moments.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html#faq">FAQ</a></li>
+            <li><a href="services.html#warranty">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 温馨光辉. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
