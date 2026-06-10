@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Updates - Cozy Light</title>
+  <meta name="description" content="Stay updated with the latest Cozy Light news, product launches, and company announcements.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+  <!-- ===== 头部导航 ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="currentColor"/>
+        </svg>
+        Cozy Light
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="news.html" class="active">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== 页面头部 ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>News & Updates</h1>
+      <p>Stay informed about Cozy Light's latest developments</p>
+    </div>
+  </section>
+
+  <!-- ===== 新闻分类筛选 ===== -->
+  <section class="news-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All News</button>
+        <button class="filter-btn" data-filter="company">Company</button>
+        <button class="filter-btn" data-filter="product">Products</button>
+        <button class="filter-btn" data-filter="industry">Industry</button>
+        <button class="filter-btn" data-filter="media">Media</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 置顶新闻 ===== -->
+  <section class="featured-news">
+    <div class="container">
+      <div class="featured-article fade-in">
+        <div class="featured-image">
+          <img src="images/news/featured.jpg" alt="Featured News"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder" style="display: none;">
+            <span>Featured News Image</span>
+          </div>
+          <span class="news-badge">Featured</span>
+        </div>
+        <div class="featured-content">
+          <div class="news-meta">
+            <span class="news-category">Product Launch</span>
+            <span class="news-date">June 1, 2026</span>
+          </div>
+          <h2>Introducing Cozy Light Pro 2.0: The Next Generation of Comfort</h2>
+          <p>We're thrilled to announce the launch of Cozy Light Pro 2.0, featuring enhanced ultrasonic technology, longer battery life, and seamless smart home integration. This represents our most advanced product to date, delivering an unparalleled comfort experience.</p>
+          <a href="#" class="btn btn-primary">Read Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 新闻列表 ===== -->
+  <section class="news-list">
+    <div class="container">
+      <div class="news-grid">
+        <!-- 新闻卡片 1 -->
+        <article class="news-card fade-in" data-category="company">
+          <div class="news-card-image">
+            <img src="images/news/office.jpg" alt="New Office"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>News Image</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <div class="news-meta">
+              <span class="news-category">Company</span>
+              <span class="news-date">May 20, 2026</span>
+            </div>
+            <h3>Cozy Light Opens New Global Headquarters in Shenzhen</h3>
+            <p>Our new state-of-the-art facility spans 50,000 square feet and includes dedicated R&D labs, a design studio, and a customer experience center.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- 新闻卡片 2 -->
+        <article class="news-card fade-in" data-category="product">
+          <div class="news-card-image">
+            <img src="images/news/app-update.jpg" alt="App Update"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>News Image</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <div class="news-meta">
+              <span class="news-category">Product</span>
+              <span class="news-date">May 15, 2026</span>
+            </div>
+            <h3>Cozy Light App 2.0 Now Available with Smart Home Integration</h3>
+            <p>Control your Cozy Light devices from anywhere with our completely redesigned app. Now compatible with Alexa, Google Home, and Apple HomeKit.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- 新闻卡片 3 -->
+        <article class="news-card fade-in" data-category="industry">
+          <div class="news-card-image">
+            <img src="images/news/award.jpg" alt="Design Award"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <span>News Image</span>
+            </div>
+          </div>
+          <div class="news-card-content">
+            <div class="news-meta">
+              <span class="news-category">Industry</span>
+              <span class="news-date">May 10, 2026</span>
+            </div>
+            <h3>Cozy Light Wins Red Dot Design Award 2026</h3>
+            <p>Our commitment to exceptional design has been recognized with the prestigious Red Dot Award for product design excellence.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 新闻通讯订阅 ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content fade-in">
+        <div class="newsletter-text">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to our newsletter for the latest news, product updates, and exclusive offers.</p>
+        </div>
+        <div class="newsletter-form">
+          <form id="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Enter your email address" required>
+              <button type="submit" class="btn btn-accent">Subscribe</button>
+            </div>
+            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 媒体资源 ===== -->
+  <section class="media-resources">
+    <div class="container">
+      <div class="section-header">
+        <h2>Media Resources</h2>
+        <p>Resources for journalists and media partners</p>
+      </div>
+      <div class="resources-grid fade-in">
+        <div class="resource-card">
+          <div class="resource-icon">📰</div>
+          <h3>Press Kit</h3>
+          <p>Download our complete press kit including logos, product images, and brand guidelines.</p>
+          <a href="#" class="btn btn-outline btn-sm">Download Kit</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📸</div>
+          <h3>Image Gallery</h3>
+          <p>High-resolution product images for editorial use.</p>
+          <a href="#" class="btn btn-outline btn-sm">View Gallery</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📝</div>
+          <h3>Fact Sheet</h3>
+          <p>Quick facts and key information about Cozy Light.</p>
+          <a href="#" class="btn btn-outline btn-sm">Download PDF</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📧</div>
+          <h3>Media Contact</h3>
+          <p>For press inquiries and interview requests.</p>
+          <a href="mailto:press@cozylight.com" class="btn btn-outline btn-sm">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA 区域 ===== -->
+  <section class="cta">
+    <div class="container">
+      <h2>Experience Cozy Light Today</h2>
+      <p>Join thousands of satisfied customers worldwide.</p>
+      <a href="products.html" class="btn btn-accent">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>温馨光辉</h3>
+          <p>Combining ambient light, refreshing humidity, and wireless audio into one beautiful device. Designed to enhance your everyday moments.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html#faq">FAQ</a></li>
+            <li><a href="services.html#warranty">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 温馨光辉. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>
