@@ -1,0 +1,11 @@
+这是一个测试文件，说明图片文件夹可以正常写入。
+
+你可以把真实的图片文件（如 hero-product.png）放到这个文件夹里。
+
+图片命名建议：
+- hero-product.png  (首页主图)
+- product-1.jpg     (产品图1)
+- product-2.jpg     (产品图2)
+- team-ceo.jpg      (CEO照片)
+- team-designer.jpg (设计师照片)
+- news-featured.jpg (新闻主图)
