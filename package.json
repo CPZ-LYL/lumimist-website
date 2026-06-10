@@ -1,0 +1,30 @@
+{
+  "name": "cozy-light-website",
+  "version": "1.0.0",
+  "description": "Cozy Light - Bluetooth Night Light & Humidifier Product Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000 -o -c-1",
+    "generate-placeholders": "python generate-placeholders.py",
+    "deploy": "git add . && git commit -m 'Update website' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPZ-LYL/lumimist-website.git"
+  },
+  "keywords": [
+    "website",
+    "product",
+    "cozy-light",
+    "humidifier",
+    "night-light",
+    "bluetooth"
+  ],
+  "author": "温馨光辉",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CPZ-LYL/lumimist-website/issues"
+  },
+  "homepage": "https://cpz-lyl.github.io/lumimist-website/"
+}
